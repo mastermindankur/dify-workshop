@@ -19,12 +19,12 @@ To ensure the LLM gets the most relevant sections of the laws, we must configure
 3. **Top-K:** Set the Top-K value to **4**. This setting controls the number of *chunks* retrieved, not the number of *documents*. When a user asks a question, Dify searches through all the 500-1000 token pieces you created in Step 2, and retrieves the 4 most relevant chunks regardless of which document they came from. It does not retrieve all documents every time.
 4. Click **Save & Process** and wait for Dify to finish embedding the documents.
 
-## Step 3: Create the Chat App
+## Step 3: Create the Agent
 Now, let's create the conversational interface.
 1. Go to the **Studio** tab and click **Create from Blank**.
-2. Select **Chat App** as the application type.
-3. Give your app a name (e.g., "Legal Advisor Bot 2026").
-4. In the app configuration screen, find the **Context** (or Knowledge) section and click **Add**. Select the Knowledge Base you just created in Step 1.
+2. Select **Agent** as the application type.
+3. Give your agent a name (e.g., "Legal Advisor Bot 2026").
+4. In the agent configuration screen, find the **Context** (or Knowledge) section and click **Add**. Select the Knowledge Base you just created in Step 1.
 
 ## Step 4: Write a Strict System Prompt
 This is the most critical step to prevent the bot from hallucinating (making things up) or answering general questions outside the provided laws.
